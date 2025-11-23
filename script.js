@@ -3,6 +3,10 @@ function gruss() {
 
   console.log("start");
 
+  if(self.crossOriginIsolated){
+    console.log("ja");
+  }
+
   let array;
   array = new Uint32Array(100);
   
