@@ -1,29 +1,29 @@
 function FP() {
   //const startTime = performance.now();
 
-  const m = 3;
+  const m = 10;
   const n = 5;
 
   //if(self.crossOriginIsolated){
     //console.log("ja");
   //}
-  let arrays = [];
+  let fp = [];
   let values = [];
   for (let i = 0; i < m; i++){
     values = [];
     for (let j= 0; j < n; j++){
       const startTime = performance.now();
       let array;
-      array = new Uint32Array(1000);
+      array = new Uint32Array(n);
       crypto.getRandomValues(array);
       const endTime = performance.now();
       const logTime = endTime - startTime;
       values.push(logTime);
     }
-    arrays.push(values);
+    fp.push(values);
   }
 
-  console.log(arrays);
+  console.log(fp);
 
   alert("geschafft");
       
