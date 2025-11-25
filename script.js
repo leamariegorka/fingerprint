@@ -24,8 +24,6 @@ function FP() {
   }
 
   console.log(fp);
-
-  alert("geschafft");
       
 
     //let sum = 0;
