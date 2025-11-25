@@ -12,11 +12,11 @@ function FP() {
   for (let i = 0; i < m; i++){
     values = [];
     for (let j= 0; j < n; j++){
-      const startTime = Date.now();
+      const startTime = performance.now();
       let array;
       array = new Uint32Array(1000);
       crypto.getRandomValues(array);
-      const endTime = Date.now();
+      const endTime = performance.now();
       const logTime = endTime - startTime;
       values.push(logTime);
     }
