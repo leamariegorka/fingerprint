@@ -115,7 +115,7 @@ function getNumCoincedences(fp1, fp2, m, n) {
     let check = false;
     let k = 0;
     while ((k<m) && (check == false)){
-      if (fp1Mode[j] == fp2[j][k]){
+      if (fp1Mode[j] == fp2[k][j]){
         numCoincedences++;
         check = true;
       }
