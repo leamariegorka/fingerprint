@@ -105,7 +105,7 @@ function computeMode(fp, m, n){
   return mode;
 }
 
-function getNumCoincidences(fp1, fp2, n, m) {
+function getNumCoincedences(fp1, fp2, n, m) {
   let numCoincedences = 0;
   let fp1Mode = [];
   for (let i = 0; i < n; i++) {
