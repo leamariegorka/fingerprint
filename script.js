@@ -54,6 +54,7 @@ function FP() {
       0.030000001192092896]];
       
     let check = FPCheck(fp, constFP, m, n, 0.9);
+    console.log(check);
     //let sum = 0;
     //for (let i = 0; i < 100; i++) {
       //sum += array[i];
