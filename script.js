@@ -134,7 +134,7 @@ function computeMode(fp, m, n){
     mode.push(mostValue[0]);
   }
 
-  console.log(mode);
+  //console.log(mode);
   return mode;
 }
 
