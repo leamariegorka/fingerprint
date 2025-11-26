@@ -128,8 +128,8 @@ function getNumCoincedences(fp1, fp2, n, m) {
 }
 
 function FPCheck(fp1, fp2, m, n, t){
-  let num = getNumCoincedences(fp1, fp2, n, m);
-  num = num + getNumCoincedences(fp2, fp1, n, m);
+  let num = getNumCoincedences(fp1, fp2, m, n);
+  num = num + getNumCoincedences(fp2, fp1, m, n);
   let th = num / (n*2);
   if (th >= t) {
     return true;
