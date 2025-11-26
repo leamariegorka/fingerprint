@@ -1,8 +1,8 @@
 
 
 function FP1(){
-  const m = 5;
-  const n = 10;//ich heisse emil der tolle bumser
+  const m = 50;
+  const n = 1000;//ich heisse emil der tolle bumser
 
   //if(self.crossOriginIsolated){
   //console.log("ja");
@@ -31,8 +31,8 @@ function FP1(){
 function FP2(fp2) {
   //const startTime = performance.now();
 
-  const m = 5;
-  const n = 10;//ich heisse emil der tolle bumser
+  const m = 50;
+  const n = 1000;//ich heisse emil der tolle bumser
 
   //if(self.crossOriginIsolated){
     //console.log("ja");
