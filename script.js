@@ -1,4 +1,34 @@
-function FP() {
+
+
+function FP1(){
+  const m = 5;
+  const n = 10;//ich heisse emil der tolle bumser
+
+  //if(self.crossOriginIsolated){
+  //console.log("ja");
+  //}
+  let fp2 = [];
+  let values = [];
+  for (let i = 0; i < m; i++){
+    values = [];
+    for (let j= 0; j < n; j++){
+      const startTime = performance.now();
+      let array;
+      array = new Uint32Array(1000);
+      crypto.getRandomValues(array);
+      const endTime = performance.now();
+      const logTime = endTime - startTime;
+      values.push(logTime);
+    }
+    fp2.push(values);
+  }
+
+  FP2(fp2);
+}
+
+
+
+function FP2(fp2) {
   //const startTime = performance.now();
 
   const m = 5;
@@ -23,7 +53,7 @@ function FP() {
     fp.push(values);
   }
 
-  console.log(fp);
+  //console.log(fp);
 
   //let mode =computeMode([[1, 2, 3],[1, 3, 1],[1, 2, 1]], 3, 3);
 
@@ -53,7 +83,7 @@ function FP() {
       0.04999999701976776, 0.029999997466802597, 0.04500000178813934,
       0.030000001192092896]];
       
-    let check = FPCheck(fp, constFP, m, n, 0.5);
+    let check = FPCheck(fp, fp2, m, n, 0.5);
     console.log(check);
     //let sum = 0;
     //for (let i = 0; i < 100; i++) {
