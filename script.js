@@ -53,7 +53,7 @@ function FP() {
       0.04999999701976776, 0.029999997466802597, 0.04500000178813934,
       0.030000001192092896]];
       
-    let check = FPCheck(fp, constFP, m, n, 0.8);
+    let check = FPCheck(fp, constFP, m, n, 0.7);
     console.log(check);
     //let sum = 0;
     //for (let i = 0; i < 100; i++) {
