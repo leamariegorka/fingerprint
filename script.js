@@ -110,9 +110,7 @@ function computeMode(fp, m, n){
 function getNumCoincedences(fp1, fp2, n, m) {
   let numCoincedences = 0;
   let fp1Mode = [];
-  for (let i = 0; i < n; i++) {
-    fp1Mode.push(computeMode(fp1, m, n));
-  }
+  fp1Mode = computeMode(fp1[i], m, n);
   for (let j = 0; j < n; j++) {
     let check = false;
     let k = 0;
