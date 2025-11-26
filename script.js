@@ -24,6 +24,15 @@ function FP1(){
   }
 
   FP2(fp2);
+
+  let run = {
+    id: null,
+  }
+
+  for (let i = 0; i < 100; i++){
+    run[i] = i +1;
+  }
+  console.log(run)
 }
 
 
