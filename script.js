@@ -24,6 +24,10 @@ function FP() {
   }
 
   console.log(fp);
+
+  let mode =computeMode([[1, 2, 3],[1, 3, 1],[1, 2, 1]], 3, 3);
+
+  console.log(mode);
       
 
     //let sum = 0;
@@ -38,35 +42,41 @@ function FP() {
 
 } 
 
-function computeMode(fp){
+function computeMode(fp, m, n){
   let mode = [];
   for (let i = 0; i < n; i++) {
-    let values = [];
+    const values = new Map();
     //stattdessen dict
     for (let j = 0; j < m; j++) {
       let check = false;
-      let max = 0;
-      for (let k = 0; k < values.length; k++) {
-        if(fp[m][n] == values[k][0]) {
+      for (const [key, value] of values) {
+        if(fp[j][i] == key) {
           //stattdessen dict
           check = true;
-          values[k][0] = values[k][0]++;
+          let num = value + 1;
+          values.set(key, num);
           //stattdessen dict
           break;
         }
-        max = k;
       }
       if (check == false){
-        max++;
+        values.set(fp[j][i], 1);
         // dict values
       }
     }
-    let mostValue = 0;
-    
+    let mostValue = [];
+
+    mostValue = [null, -1]
+
+    for (const [key, value] of values) {
+      if (value > mostValue[1]){
+        mostValue = [key, value];
+      }
+    }
     // durch das ganze dict gehen
     // wert mit meisten nums in mostValue
 
-    mode.push(mostValue);
+    mode.push(mostValue[0]);
   }
   return mode;
 }
@@ -75,7 +85,7 @@ function getNumCoincidences(fp1, fp2, n, m) {
   let numCoincedences = 0;
   let fp1Mode = [];
   for (let i = 0; i < n; i++) {
-    fp1Mode.push(computeMode(fp1[i])
+    fp1Mode.push(computeMode(fp1[i], m, n));
   }
   for (let j = 0; j < n; j++) {
     let check = false;
