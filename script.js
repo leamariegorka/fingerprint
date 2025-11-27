@@ -90,6 +90,7 @@ function FP() {
       
     let check = FPCheck(fp, tryResultRounded, m, n, 0.95);
     console.log(check);
+    //hi
     //console.log(Number((6.688689).toFixed(1)));
     //hi
     //let sum = 0;
