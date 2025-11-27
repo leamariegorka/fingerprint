@@ -53,12 +53,13 @@ function FP() {
       crypto.getRandomValues(array);
       const endTime = Number((performance.now()).toFixed(3));
       const logTime = endTime - startTime;
+      logTime = Number((logTime).toFixed(3));
       values.push(logTime);
     }
     fp.push(values);
   }
 
-    //console.log(JSON.stringify(fp));
+    console.log(JSON.stringify(fp));
 
   //console.log(fp);
 
