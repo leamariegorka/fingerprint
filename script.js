@@ -52,7 +52,7 @@ function FP() {
       array = new Uint32Array(1000);
       crypto.getRandomValues(array);
       const endTime = Number((performance.now()).toFixed(3));
-      const logTime = endTime - startTime;
+      let logTime = endTime - startTime;
       logTime = Number((logTime).toFixed(3));
       values.push(logTime);
     }
