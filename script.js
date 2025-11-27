@@ -1,6 +1,6 @@
 
 
-/*function FP1(){
+function FP1(){
   const m = 50;
   const n = 1000;//ich heisse emil der tolle bumser
 
@@ -23,14 +23,13 @@
     fp2.push(values);
   }
 
-  console.log(JSON.stringify(fp2));
 
   FP2(fp2);
-}*/
+}
 
 
 
-function FP() {
+function FP2(fp2) {
   //const startTime = performance.now();
 
   const m = 50;
@@ -87,7 +86,7 @@ function FP() {
       0.04999999701976776, 0.029999997466802597, 0.04500000178813934,
       0.030000001192092896]];
       
-    let check = FPCheck(fp, tryResult, m, n, 0.95);
+    let check = FPCheck(fp, fp2, m, n, 0.95);
     console.log(check);
     //hi
     //console.log(Number((6.688689).toFixed(1)));
