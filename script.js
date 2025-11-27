@@ -87,6 +87,7 @@ function FP() {
       
     let check = FPCheck(fp, tryResult, m, n, 0.95);
     console.log(check);
+    console.log(Number((6.688689).toFixed(1)));
     //let sum = 0;
     //for (let i = 0; i < 100; i++) {
       //sum += array[i];
