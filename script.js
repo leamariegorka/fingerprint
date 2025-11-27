@@ -44,16 +44,18 @@ function FP() {
   for (let i = 0; i < m; i++){
     values = [];
     for (let j= 0; j < n; j++){
-      const startTime = performance.now();
+      const startTime = Number((performance.now()).toFixed(3));
       let array;
       array = new Uint32Array(1000);
       crypto.getRandomValues(array);
-      const endTime = performance.now();
+      const endTime = Number((performance.now()).toFixed(3));
       const logTime = endTime - startTime;
       values.push(logTime);
     }
     fp.push(values);
   }
+
+    console.log(JSON.stringify(fp));
 
   //console.log(fp);
 
@@ -87,7 +89,7 @@ function FP() {
       
     let check = FPCheck(fp, tryResult, m, n, 0.95);
     console.log(check);
-    console.log(Number((6.688689).toFixed(1)));
+    //console.log(Number((6.688689).toFixed(1)));
     //hi
     //let sum = 0;
     //for (let i = 0; i < 100; i++) {
