@@ -45,6 +45,9 @@ function FP() {
     values = [];
     for (let j= 0; j < n; j++){
       const startTime = Number((performance.now()).toFixed(3));
+      if(i==0 && j==0){
+          console.log(startTime);
+      }
       let array;
       array = new Uint32Array(1000);
       crypto.getRandomValues(array);
@@ -55,7 +58,7 @@ function FP() {
     fp.push(values);
   }
 
-    console.log(JSON.stringify(fp));
+    //console.log(JSON.stringify(fp));
 
   //console.log(fp);
 
