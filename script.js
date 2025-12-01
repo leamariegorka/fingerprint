@@ -24,7 +24,7 @@ function FP() {
         fp.push(values);
     }
 
-    console.log(JSON.stringify(fp));
+    //console.log(JSON.stringify(fp));
 
     //console.log(fp);
 
