@@ -24,9 +24,9 @@ function FP() {
         fp.push(values);
     }
 
-    console.log(JSON.stringify(fp));
+    //console.log(JSON.stringify(fp));
 
-    console.log(fp);
+    //console.log(fp);
 
     //let mode =computeMode([[1, 2, 3],[1, 3, 1],[1, 2, 1]], 3, 3);
 
